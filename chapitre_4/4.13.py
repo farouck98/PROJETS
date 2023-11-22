@@ -7,3 +7,4 @@ for i in range(1,  11):
             print(n, end=" ")
     print()
 
+new_set= {i for i in range(1, 11), j for j in range(1, 11)}

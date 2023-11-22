@@ -4,4 +4,4 @@ new_list = []
 for i in demo_list:
     square = i**2
     new_list.append(square)
-    print(new_list)
+print(new_list)
