@@ -10,6 +10,9 @@ desktop publishing software like Aldus PageMaker including versions of
 Lorem Ipsum."""
 
 
+for char in chars_to_remove:
+    lorem_ipsum = lorem_ipsum.replace(chars_to_remove, new:"" )
+print(lorem_ipsum)
 
 
 
