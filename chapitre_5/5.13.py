@@ -6,7 +6,7 @@ user_logins = {
 }
 username = input("Enter an username : ").strip().lower()
 password = input("Enter a passwowd : ").strip()
-if username in user_logins.keys() and password == user_logins[username]:
+if username in user_logins.keys() and password == user_logins.get(username):
     print("Access granted")
 else:
     print("Could not login")

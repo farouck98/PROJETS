@@ -1,4 +1,9 @@
 famous_citation = "I think therefore, I am."
-for i in set(famous_citation):
-    if famous_citation.count(i) > 1:
-        print(f"there are {famous_citation.count(i)} {i} in the text")
+new_dic = {}
+
+
+#for i in set(famous_citation):
+#    i.lower()
+#    count = famous_citation.count(i)
+#    if count >= 1:
+#        print(f"there are {count} {i} in the text")

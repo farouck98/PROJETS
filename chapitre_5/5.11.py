@@ -7,3 +7,4 @@ products_stocks = {
 print(products_stocks.keys())
 print(products_stocks.values())
 print(products_stocks.items())
+print(products_stocks.get("glue"))
