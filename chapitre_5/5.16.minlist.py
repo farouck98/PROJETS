@@ -6,3 +6,5 @@ for i in l.copy():
     list_trie.append(min(l))
     l.remove(min(l))
 print(list_trie)
+
+#
