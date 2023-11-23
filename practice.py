@@ -1,12 +1,13 @@
-chars_to_remove = ".,;:!?/'"
-lorem_ipsum ="""Lorem Ipsum is simply dummy text of the printing and
-typesetting industry. Lorem Ipsum has been the industry's standard dummy
-text ever since the 1500s, when an unknown printer took a galley of type
-and scrambled it to make a type specimen book. It has survived not only
-five centuries, but also the leap into electronic typesetting, remaining
-essentially unchanged. It was popularised in the 1960s with the release of
-Letraset sheets containing Lorem Ipsum passages, and more recently with
-desktop publishing software like Aldus PageMaker including versions of
-Lorem Ipsum."""
+#listcomprehension
+l1 = ["a", "b", "c", "d", "e", "f"]
 
-lorem_ipsum = lorem_ipsum.lower()
+#expression for i in iterator
+#l4 = [l1[i] + l1[i+1] if i %2 == 0 else l1[i] for i in range(len(l1)-1)]
+#print(l4)
+
+l2 = [l1[i] for i in range(len(l1)-1) if i % 2 == 0]
+print(l2)
+
+#list comprehension pour la liste contenant le carré des expressions
+#l3 = [i*2 for i in l1]
+#print(l3)

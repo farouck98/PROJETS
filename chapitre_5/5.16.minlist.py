@@ -7,4 +7,3 @@ for i in l.copy():
     l.remove(min(l))
 print(list_trie)
 
-#
