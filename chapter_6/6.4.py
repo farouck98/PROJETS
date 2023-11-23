@@ -6,6 +6,6 @@ def moy(list):
         for i in list:
            somme = somme + i
            moyenne = somme / len(list)
-        print(moyenne)
+        return moyenne
 
-moy(demo_list)
+print(moy(demo_list))
