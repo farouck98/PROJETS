@@ -5,9 +5,13 @@ for i in range(len(e)):
 print(e2)"""
 
 def reverse_list(l: list):
+    """l = l[::-1]
+    return l"""
+    new_list = []
     if l == [] or l is not None:
-       for i in range(len(l)):
-            return [l[len(l) - i -1]for i in range(len(l))]
+        for i in range(len(l)-1, -1, -1):
+            new_list.append(l[i])
+        return new_list
     else:
         return None
 print(reverse_list(e))
