@@ -1,16 +1,16 @@
-list = []
+new_list = []
 end = False
+
 while not end:
-    nbr = int(input("Entrez un nombre : "))
+    nbr = int(input("Enter a number : "))
     if nbr == 0:
-       print(f"la liste définitive est :{list}")
-       end = True
-    elif nbr % 2 == 0:
-        list.append(nbr)
-        print(list)
-    elif nbr % 2 > 0:
-        list.pop(-1)
-        print(list)
+        end = True
+        print(f"la liste définitive est {new_list}")
+    elif nbr%2 == 0:
+        new_list.append(nbr)
+        print(new_list)
+    elif nbr%2 != 0:
+        new_list.pop(-1)
     else:
-        print(list)
+        print(new_list)
 

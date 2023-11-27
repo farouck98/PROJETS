@@ -1,4 +1,3 @@
-def greets(name, greeting= "hello"):
-    print(f'{greeting} {name}')
-
-greets("Farouck")
+def greet(name):
+    return f"hello, {name}"
+print(greet('farouck'))
