@@ -1,6 +1,4 @@
 
-def compute_discounted_price(op: float, dp: float):
-         dp = float(dp/100)
-         result = float(op) - (float(op) * dp)
-         return result
-print(compute_discounted_price(110, 30))
+def compute_discounted_price(original_price: float, discount_percentage: float):
+         return original_price - (original_price * discount_percentage/100)
+print(compute_discounted_price(100, 30))
