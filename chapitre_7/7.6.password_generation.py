@@ -1,16 +1,19 @@
 import string
 from random import randint
+from random import sample
 from random import choice
 from random import shuffle
+
+
+def password_generation():
+    length_password = randint(10, 64)
 
     lowercase_letters = choice(string.ascii_lowercase)
     uppercase_letters = choice(string.ascii_uppercase)
     digits = string.digits
     special_character = choice('@!=&*^!')
-def password_generation():
-    length_password = randint(10, 64)
 
-    all_charaters = lowercase_letters + uppercase_letters + digits + special_character
+    all_characters = lowercase_letters + uppercase_letters + digits + special_character
 
     password = choice(lowercase_letters) + \
                 choice(uppercase_letters) + \
@@ -26,7 +29,7 @@ def password_generation():
     return password
 
 def main():
-    password_generation()
+    print(password_generation())
 
-if __main__ = "__main__":
+if __name__ == "__main__":
     main()
